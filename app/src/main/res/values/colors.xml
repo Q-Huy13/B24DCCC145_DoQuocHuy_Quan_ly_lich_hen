@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#5B3FD9</color>
+    <color name="primary_light">#7C4DFF</color>
+    <color name="primary_dark">#3B27A0</color>
+    <color name="coral">#FF6B6B</color>
+    <color name="coral_light">#FF8E72</color>
+    <color name="remind_bg">#FFE9E9</color>
+    <color name="remind_text">#D63B3B</color>
+    <color name="chip_bg">#ECE8FF</color>
+    <color name="gray_light">#EDEBF5</color>
+    <color name="gray_text">#7A7596</color>
+    <color name="text_dark">#1F1B33</color>
+    <color name="danger">#E53935</color>
+    <color name="background">#F3F0FF</color>
+    <color name="surface_input">#F7F5FF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="border">#DDD7F5</color>
+</resources>

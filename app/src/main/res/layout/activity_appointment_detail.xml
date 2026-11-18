@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_card"
+        android:elevation="3dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- 1. Tên -->
+        <TextView
+            android:id="@+id/tvDetailTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/primary_dark"
+            android:textSize="24sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="4dp"
+            android:background="@color/border" />
+
+        <!-- 2. Địa điểm -->
+        <TextView
+            style="@style/FieldLabel"
+            android:text="@string/detail_location" />
+
+        <TextView
+            android:id="@+id/tvDetailLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_dark"
+            android:textSize="17sp" />
+
+        <!-- 3. Thời gian -->
+        <TextView
+            style="@style/FieldLabel"
+            android:text="@string/detail_time" />
+
+        <TextView
+            android:id="@+id/tvDetailTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_dark"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/border" />
+
+        <!-- 4. Nhắc nhở -->
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/swDetailReminder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/detail_reminder"
+            android:textColor="@color/text_dark"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvReminderState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_text"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <!-- 5. Quay lại -->
+    <Button
+        android:id="@+id/btnBack"
+        style="@style/AppButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_button_outline"
+        android:text="@string/btn_back"
+        android:textColor="@color/primary" />
+
+    <!-- 6. Xóa -->
+    <Button
+        android:id="@+id/btnDelete"
+        style="@style/AppButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_button_danger"
+        android:text="@string/btn_delete"
+        android:textColor="@color/white" />
+</LinearLayout>

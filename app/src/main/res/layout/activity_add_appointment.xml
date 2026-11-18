@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card"
+            android:elevation="3dp"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+        <!-- 1. Tên lịch hẹn -->
+        <TextView
+            style="@style/FieldLabel"
+            android:layout_marginTop="0dp"
+            android:text="@string/add_title_label" />
+
+        <EditText
+            android:id="@+id/edtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_input"
+            android:hint="@string/add_title_hint"
+            android:importantForAutofill="no"
+            android:inputType="textCapSentences"
+            android:maxLines="1"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:textColor="@color/text_dark"
+            android:textColorHint="@color/gray_text" />
+
+        <!-- 2. Địa điểm -->
+        <TextView
+            style="@style/FieldLabel"
+            android:text="@string/add_location_label" />
+
+        <EditText
+            android:id="@+id/edtLocation"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_input"
+            android:hint="@string/add_location_hint"
+            android:importantForAutofill="no"
+            android:inputType="textCapSentences"
+            android:maxLines="1"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:textColor="@color/text_dark"
+            android:textColorHint="@color/gray_text" />
+
+        <!-- 3. Ngày hẹn -->
+        <TextView
+            style="@style/FieldLabel"
+            android:text="@string/add_date_label" />
+
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_input"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner" />
+
+        <!-- 4. Giờ hẹn -->
+        <TextView
+            style="@style/FieldLabel"
+            android:text="@string/add_time_label" />
+
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_input"
+            android:timePickerMode="spinner" />
+
+        <!-- 5. Nhắc nhở -->
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/swReminder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:checked="true"
+            android:minHeight="48dp"
+            android:text="@string/add_reminder"
+            android:textColor="@color/text_dark"
+            android:textSize="15sp" />
+        </LinearLayout>
+
+        <!-- 6. Nút lưu -->
+        <Button
+            android:id="@+id/btnSave"
+            style="@style/AppButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_button_primary"
+            android:text="@string/btn_save"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</ScrollView>
